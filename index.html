@@ -15,7 +15,8 @@
             </svg>
         </div>
         <div id="control-panel">  
-            <label>             
+            <label>     
+                Draw your Vector Here!        
                 <svg id="vector-drawing" width="400" height="400" onmousedown="drawVector(this,event)" >
                     <line x1="200" y1="0" x2="200" y2="400" style="stroke:rgb(255,0,0);stroke-width:2" />
                     <line x1="0" y1="200" x2="400" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
@@ -30,8 +31,8 @@
 
             <label> Board width and length (m) <input type="text" onchange="resizeBoard(this)" value="1000"/></label>
             <label> Time Scale <input type=text placeholder="ex: 2x speed is 2" onchange="speedMultiply(this.value || 1)"/></label>
-            <button>Add</button>
-            <button>Delete</button>
+            <!-- <button>Add</button>
+            <button>Delete</button> -->
             <button onclick="clearLines()"> Clear Lines </button>
         </div>
     </body>

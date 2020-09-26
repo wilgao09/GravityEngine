@@ -12,7 +12,7 @@ http.createServer((req,res) => {
     res.writeHead(200,{"Content-Type":"text/html"});
     fs.readFile("index.html", (err, dat) => {
         if (err) res.write("error; try again?");
-        else res.write(dat);
+        else res.write(dat.toString());
     });
     res.end();
-}).listen(80);
+}).listen(8080);
