@@ -34,4 +34,13 @@ Features I didn't get to implement:
 - More comprehensive debug information
 
 ## Learning Experience!?
-Planning is the msot important thing in the universe, even if you think it's something you've done
+Planning is the msot important thing in the universe, even if you think it's something you've done before. I overestimated how much I could do in 24 hours.
+The time constraint also got me to stop featurecreeping.
+
+
+
+
+
+## Technical Bits
+This project only uses circles, so there are no AABBs. 
+The space in the SVG is converted so that the coordinates are relative to a (0,0) in the center of the square screen as opposed to a (0,0) in the top left corner. 
