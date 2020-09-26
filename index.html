@@ -1,0 +1,38 @@
+<!DOCTYPE HTML> 
+<html>
+    <head>
+        <title> Physics </title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="Vector2D.js"></script>
+        <script src="Satellite.js"></script>
+        <script src="Physics.js"></script>
+        <script src="Frame.js"></script>
+    </head>
+    <body onload="init();">
+        <div id="field" onclick="createNewPlanet(event)" >
+            <svg >
+
+            </svg>
+        </div>
+        <div id="control-panel">  
+            <label>             
+                <svg id="vector-drawing" width="400" height="400" onmousedown="drawVector(this,event)" >
+                    <line x1="200" y1="0" x2="200" y2="400" style="stroke:rgb(255,0,0);stroke-width:2" />
+                    <line x1="0" y1="200" x2="400" y2="200" style="stroke:rgb(255,0,0);stroke-width:2" />
+                </svg> 
+            </label>  
+
+            <label> Initial Velocity Maximum Magnitude <input type="text" value="260"/></label>
+            <label> Color <input type="text" placeholder="ex: blue or #FFFFFF" value="red"/></label>
+            <label> Mass (kg)<input type="text" value="5.97"/> * 10^ <input type="text" value="18"/></label>
+            <label> Radius (m)<input type="text" value="20"></label>
+            <label> Coefficient of Restitution <input type="text" value="-1"/></label>
+
+            <label> Board width and length (m) <input type="text" onchange="resizeBoard(this)" value="1000"/></label>
+            <label> Time Scale <input type=text placeholder="ex: 2x speed is 2" onchange="speedMultiply(this.value || 1)"/></label>
+            <button>Add</button>
+            <button>Delete</button>
+            <button onclick="clearLines()"> Clear Lines </button>
+        </div>
+    </body>
+</html>

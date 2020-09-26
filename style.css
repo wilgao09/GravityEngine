@@ -1,0 +1,51 @@
+
+#field {
+    display:inline-block;
+    vertical-align: top;
+    /* squaremaking will be dynamic */
+}
+
+#control-panel {
+    display:inline-block;
+    background-color:purple;
+    vertical-align: top;
+}
+
+#vector-drawing {
+    background-color: blue;
+    display: block;
+}
+
+#field > svg {
+    /* width:100%;
+    height:100%; */
+
+    background-color:#000000;
+}
+
+#control-panel > label {
+    display:block;
+    width:100%;
+    
+}   
+
+#v0Vector {
+    stroke:white;
+    stroke-width: 5px;
+}
+
+line.trail {
+    stroke:yellow;
+    stroke-width: 1px;
+}
+
+line.debug-vec {
+    stroke: magenta;
+    stroke-width:1px;
+}
+
+body {
+    margin:0px;
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
